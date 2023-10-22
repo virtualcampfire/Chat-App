@@ -1,0 +1,131 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #4A91A8;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+.chatrooms{
+    background-color: #40809B;
+    width: 30%;
+    height: 100%;
+}
+.name-of-chat{
+    background-color: #40809B;
+    color: #CEFFFF;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.title-chats{
+    width: 70%;
+    border-radius: 10px;
+    background: #4A91A8;
+    color: #FFF;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name-chats{
+    color: #40809B;
+    background-color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: normal;
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.chat{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+}
+.title-chat{
+    width: 100%;
+    height: 10%;
+}
+.messages{
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+}
+.send-message{
+    width: 100%;
+    height: 10%;
+    background-color: #40809B;
+}
+.chat-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.center{
+    align-items: center;
+}
+.message{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    background: white;
+    height: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    font-family: sans-serif;
+}   
+.container-message{
+    display: flex;
+    width: 100%;
+}
+.widthTo100{
+    width: 100%;
+}
+.input-message{
+    width: 80%;
+    height: 70%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.submit-message{
+    width: 10%;
+    height: 70%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #4A91A8;
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
