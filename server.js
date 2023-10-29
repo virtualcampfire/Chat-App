@@ -21,6 +21,7 @@ io.on('connection', (socket) => {
         console.log('Received message:', message);
         messages.push(message);
         io.emit('message', message);
+        checkIfMessageIsCommand(message);
     });
     socket.on('disconnect', () => {
         console.log('A user has disconnected');
@@ -34,3 +35,12 @@ io.on('connection', (socket) => {
 http.listen(3000, () => {
     console.log('Server läuft auf Port 3000');
 });
+
+function checkIfMessageIsCommand(message) {
+    if (message.text.startsWith('/')) {
+        if(message.text == "/clear"){
+            messages = [];
+            io.emit('resetMessage');
+        }
+    }
+}
